@@ -1,0 +1,393 @@
+.pokedex-wrapper {
+  width: 510px;
+  height: 360px;
+
+  background-color: transparent;
+
+  position: fixed;
+  left: 50%;
+  top: 80px;
+
+  margin-left: -255px;
+
+  display: block;
+}
+
+body {
+  background-color: lightgray;
+}
+
+/***************************************************
+Decorations for the top of the LEFT SIDE of the pokdex
+ ****************************************************/
+.pokedex-left {
+  height: 360px;
+  width: 270px;
+
+  background-color: red;
+  display: inline-block;
+  border-radius: 10% 10% 0 10%;
+}
+
+.power-button-off, .power-button {
+  width: 65px;
+  height: 65px;
+
+  background-color: blue;
+  margin-left: .8em;
+  margin-top: .8em;
+  border-radius: 50%;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 3px solid white;
+
+  box-shadow: 0 0 5px #000;
+}
+
+.pokedex-top-left {
+  background-color: darkred;
+  width: 120px;
+  height: 90px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 10% 0 70% 0;
+}
+
+.pokedex-top-right {
+  background-color: darkred;
+
+  width: 130px;
+  height: 45px;
+
+  position: absolute;
+  top: 0px;
+  left: 110px;
+
+  border-radius: 0;
+}
+
+.pokedex-top-bottom-right {
+  background-color: red;
+
+  width: 125px;
+  height: 20px;
+
+  position: absolute;
+  top: 33px;
+  left: 115px;
+
+  border-radius: 80% 0 0 0;
+}
+
+.red-button, .green-button, .yellow-button {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50px;
+  top: 10px;
+  box-shadow: 0 0 5px #000;
+}
+
+.green-button {
+  background-image: -webkit-radial-gradient(circle, #ADFF2F, #32CD32, #32CD32);
+  left: 124px;
+}
+
+.red-button {
+  background-image: -webkit-radial-gradient(circle, #F08080, #DC143C, #DC143C);
+  left: 80px;
+}
+
+
+.yellow-button {
+  background-image: -webkit-radial-gradient(circle, #FFFF00, #FFD700, #FFD700);
+  left: 102px;
+}
+
+
+.power-button-off {
+  background-image: -webkit-radial-gradient(circle, #fff, #87CEFA, #87CEFA);
+}
+.power-button {
+  background-image: -webkit-radial-gradient(circle, #fff, #00BFFF, #00BFFF);
+}
+
+.pokedex-hinges {
+  background-color: red;
+
+  height: 360px;
+  width: 30px;
+
+  position: absolute;
+  top: 0px;
+  left: 240px;
+
+  box-shadow: 0 0 7px #000;
+}
+
+
+
+/***************************************************
+Decorations for the top of the RIGHT SIDE of the pokdex
+ ****************************************************/
+.pokedex-right {
+  height: 280px;
+  width: 240px;
+
+  position: relative;
+  background-color: red;
+  display: inline-block;
+  border-radius: 0 10% 10% 0;
+}
+
+.pokedex-right-bottom-left {
+  background: red;
+  width: 130px;
+  height: 49px;
+  position: absolute;
+  top: -49px;
+
+  border-radius: 0 60% 0 0;
+}
+
+.pokedex-right-top-right {
+  background: red;
+  width: 130px;
+  height: 45px;
+  position: absolute;
+  top: -22px;
+  left: 110px;
+}
+
+.pokedex-right-bottom-right {
+  background: lightgray;
+  width: 130px;
+  height: 55px;
+
+  position: absolute;
+  top: -50px;
+  left: 110px;
+
+  border-radius: 0 20% 0 90%;
+}
+
+.pokdex-right-bottom-right-bottom {
+  background: red;
+  width: 120px;
+  height: 45px;
+  position: absolute;
+  top: -3px;
+  left: 120px;
+  border-radius: 0 20% 0 0;
+}
+
+.information-block {
+  position: absolute;
+
+  width: 200px;
+
+  top: 255px;
+  left: 20px;
+}
+
+.nickname {
+  background-color: darkgray;
+
+  width: 100%;
+}
+
+/***************************************************
+Pokdex screen & etc
+ ****************************************************/
+.pokemon-display {
+  background-color: darkgray;
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  left: 10px;
+  top: 100px;
+
+  border-radius: 9%;
+
+  background-size: 175px;
+}
+
+.pokemon-display-image{
+  background-color: #FFF;
+  width: 180px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 17px;
+
+  border-radius: 10%;
+
+  border: 2px solid #808080;
+  background-size: 100px;
+}
+
+.pokemon-number-text {
+  font-family: 'Courier New';
+  position: relative;
+  width: 40px;
+  left: 10px;
+  text-align: right;
+  padding-right: 1em;
+
+  font-weight: bold;
+}
+
+.pokemon-name-text {
+  font-family: 'Courier New';
+  display: inline-block;
+}
+
+.pokemon-display-text {
+  width: 180px;
+  background-color: transparent;
+
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.pokemon-description {
+  width: 180px;
+  height: 80px;
+
+  position: absolute;
+  top: 30px;
+  left: 20px;
+
+  overflow: auto;
+  
+  background: linear-gradient(#00FF00, #32CD32);
+
+  border: 2px solid white;
+  box-shadow: 0 0 3px #000;
+
+  padding: .2em;
+}
+
+.pokemon-description-text {
+  height: 100px;
+  font-family: 'Courier New';
+  font-size: 11px;
+  overflow: auto;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid yellow;
+
+  position: absolute;
+  top: 124px;
+  left: 200px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid yellow;
+  position: absolute;
+  top: 124px;
+  left: 14px;
+}
+
+.pokemon-types {
+  position: absolute;
+  left: 20px;
+  top: 130px;
+  width: 190px;
+
+  font-family: 'Courier New';
+  font-size: 10px;
+}
+
+.effectiveness-title {
+  margin: 0;
+  background-color: lightgray;
+  font-size: 12px;
+}
+
+.NORMAL, .FIRE, .WATER, .ELECTRIC, .GRASS, .ICE, .FIGHTING, .POISON,
+.GROUND, .FLYING, .PSYCHIC, .BUG, .ROCK, .GHOST, .DRAGON, .DARK,
+.STEEL, .FAIRY {
+  font-size: 11px;
+  font-family: 'Courier New';
+
+  padding: .35em;
+  margin: .35em;
+
+  display: inline-block;
+
+  border: 1px solid white;
+  box-shadow: 0 0 3px #000;
+}
+
+.NORMAL {
+  background-color: #A8A77A;
+}
+.FIRE {
+  background-color: #EE8130;
+}
+.WATER {
+  background-color: #6390F0;
+}
+.ELECTRIC {
+  background-color: #F7D02C;
+}
+.GRASS {
+  background-color: #7AC74C;
+}
+.ICE {
+  background-color: #96D9D6;
+}
+.FIGHTING {
+  background-color: #C22E28;
+}
+.POISON {
+  background-color: #A33EA1;
+}
+.GROUND {
+  background-color: #E2BF65;
+}
+.FLYING {
+  background-color: #A98FF3;
+}
+.PSYCHIC {
+  background-color: #F95587;
+}
+.BUG {
+  background-color: #A6B91A;
+}
+.ROCK {
+  background-color: #B6A136;
+}
+.GHOST {
+  background-color: #735797;
+}
+.DRAGON {
+  background-color: #6F35FC;
+}
+.DARK {
+  background-color: #705746;
+}
+.STEEL {
+  background-color: #B7B7CE;
+}
+.FAIRY {
+  background-color: #D685AD;
+}
